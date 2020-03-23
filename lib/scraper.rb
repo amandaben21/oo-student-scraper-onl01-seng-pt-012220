@@ -10,7 +10,7 @@ class Scraper
       student = []
       index_page = {
         :name => student.css("h4").text
-        :location => student.css("p")
+        :location => student.css("p").text
         :profile_url =>
       }
 
