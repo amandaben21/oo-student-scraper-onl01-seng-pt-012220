@@ -9,8 +9,8 @@ class Scraper
     doc.css(".student-card").each do |student|
       student = []
       index_page = {
-        :name => student.css("h4")
-        :location =>
+        :name => student.css("h4").text
+        :location => student.css()
         :profile_url =>
       }
 
